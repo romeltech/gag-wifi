@@ -1,0 +1,145 @@
+{
+  "GuestLayout.css": {
+    "file": "assets/GuestLayout-4cf54ad2.css",
+    "src": "GuestLayout.css"
+  },
+  "_GuestLayout-05e9778c.js": {
+    "css": [
+      "assets/GuestLayout-4cf54ad2.css"
+    ],
+    "file": "assets/GuestLayout-05e9778c.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "_PageHeader-3716195d.js": {
+    "file": "assets/PageHeader-3716195d.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "_index.esm-fceb4323.js": {
+    "file": "assets/index.esm-fceb4323.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "_pageHeader-7466a5e6.js": {
+    "file": "assets/pageHeader-7466a5e6.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-5a1edf04.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "css": [
+      "assets/app-5a1edf04.css"
+    ],
+    "dynamicImports": [
+      "resources/js/auth/Login.vue",
+      "resources/js/pages/public/grandiose/Registration.vue",
+      "resources/js/pages/public/grandiose/ThankYou.vue",
+      "resources/js/pages/admin/Dashboard.vue",
+      "resources/js/pages/admin/users/Users.vue",
+      "resources/js/pages/admin/users/EditUser.vue",
+      "resources/js/pages/admin/Logs.vue",
+      "resources/js/pages/admin/Departments.vue",
+      "resources/js/pages/admin/Companies.vue",
+      "resources/js/pages/admin/Dashboard.vue"
+    ],
+    "file": "assets/app-a7487ad6.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/js/auth/Login.vue": {
+    "file": "assets/Login-ec5db07c.js",
+    "imports": [
+      "resources/js/app.js",
+      "_GuestLayout-05e9778c.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/auth/Login.vue"
+  },
+  "resources/js/pages/admin/Companies.vue": {
+    "file": "assets/Companies-a91e2b4c.js",
+    "imports": [
+      "resources/js/app.js",
+      "_PageHeader-3716195d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/pages/admin/Companies.vue"
+  },
+  "resources/js/pages/admin/Dashboard.vue": {
+    "file": "assets/Dashboard-e6178995.js",
+    "imports": [
+      "resources/js/app.js",
+      "_PageHeader-3716195d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/pages/admin/Dashboard.vue"
+  },
+  "resources/js/pages/admin/Departments.vue": {
+    "file": "assets/Departments-5fa5f615.js",
+    "imports": [
+      "resources/js/app.js",
+      "_PageHeader-3716195d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/pages/admin/Departments.vue"
+  },
+  "resources/js/pages/admin/Logs.vue": {
+    "file": "assets/Logs-4f24199d.js",
+    "imports": [
+      "resources/js/app.js",
+      "_PageHeader-3716195d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/pages/admin/Logs.vue"
+  },
+  "resources/js/pages/admin/users/EditUser.vue": {
+    "file": "assets/EditUser-8b8821f0.js",
+    "imports": [
+      "resources/js/app.js",
+      "_pageHeader-7466a5e6.js",
+      "_index.esm-fceb4323.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/pages/admin/users/EditUser.vue"
+  },
+  "resources/js/pages/admin/users/Users.vue": {
+    "file": "assets/Users-a8601522.js",
+    "imports": [
+      "resources/js/app.js",
+      "_pageHeader-7466a5e6.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/pages/admin/users/Users.vue"
+  },
+  "resources/js/pages/public/grandiose/Registration.vue": {
+    "file": "assets/Registration-c0d7b85b.js",
+    "imports": [
+      "resources/js/app.js",
+      "_index.esm-fceb4323.js",
+      "_GuestLayout-05e9778c.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/pages/public/grandiose/Registration.vue"
+  },
+  "resources/js/pages/public/grandiose/ThankYou.vue": {
+    "file": "assets/ThankYou-dfd0d1ab.js",
+    "imports": [
+      "resources/js/app.js",
+      "_GuestLayout-05e9778c.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/pages/public/grandiose/ThankYou.vue"
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-cbf7c96c.css",
+    "isEntry": true,
+    "src": "resources/sass/app.scss"
+  }
+}
