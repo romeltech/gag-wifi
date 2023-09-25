@@ -118,17 +118,11 @@ const credentials = ref({
 const loadingLogin = ref(false);
 const register = async () => {
   loadingLogin.value = true;
+  
   await axios
     .post("/grandiose-registration", credentials.value)
     .then((res) => {
-      window.location.href = "/grandiose-thank-you";
-      //   router
-      //     .push({
-      //       name: "GrandioseThankYou",
-      //     })
-      //     .catch((err) => {
-      //       console.log(err);
-      //     });
+      window.location.href = "/grandiose-thank-you"; 
     })
     .catch((err) => {
       loadingLogin.value = false;
