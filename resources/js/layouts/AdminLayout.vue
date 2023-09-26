@@ -148,14 +148,11 @@ import { useDisplay } from "vuetify";
 import {
   mdiChevronLeft,
   mdiChevronRight,
-  mdiHomeOutline,
   mdiBellOutline,
   mdiAccountGroup,
+  mdiAccountCog,
   mdiAccount,
   mdiCog,
-  mdiPlaylistEdit,
-  mdiDomain,
-  mdiOfficeBuilding,
 } from "@mdi/js";
 import { useAuthStore } from "@/stores/auth";
 import { printInitials } from "@/composables/printInitials";
@@ -171,33 +168,19 @@ const drawer = ref(true);
 const temporary = ref(false);
 const sideNavigation = ref([
   {
-    title: "Dashboard",
-    icon: mdiHomeOutline,
-    path: "/admin",
-  },
-  {
-    title: "Users",
+    title: "Registered Users",
     icon: mdiAccountGroup,
-    path: "/admin/users",
+    path: "/admin/registered-users",
   },
-  {
-    title: "Logs",
-    icon: mdiPlaylistEdit,
-    path: "/admin/logs",
-  },
+
   {
     title: "Settings",
     icon: mdiCog,
     subs: [
       {
-        title: "Companies",
-        icon: mdiDomain,
-        path: "/admin/companies",
-      },
-      {
-        title: "Departments",
-        icon: mdiOfficeBuilding,
-        path: "/admin/departments",
+        title: "Admin",
+        icon: mdiAccountCog,
+        path: "/admin/users",
       },
     ],
   },
@@ -207,8 +190,9 @@ const openPage = (path) => {
     console.log(err);
   });
 };
-const logout = () => {
-  console.log("/logout");
+const logout = (e) => {
+  e.preventDefault();
+  document.getElementById("logout-form").submit();
 };
 
 watch(mobile, async (newMobileValue, oldMobileValue) => {

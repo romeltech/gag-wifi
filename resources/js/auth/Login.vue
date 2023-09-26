@@ -51,7 +51,8 @@ const login = async () => {
   try {
     const res = await axios.post("/login", data);
     if (res) {
-      router.push("/admin");
+      window.location.href = "/admin/registered-users";
+      //   router.push("/admin/registered-users");
       loadingLogin.value = false;
     }
   } catch (err) {

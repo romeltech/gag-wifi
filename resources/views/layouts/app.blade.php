@@ -24,6 +24,9 @@
             <main-component :auth="{{ json_encode(auth()->user()) }}"></main-component>
             {{-- @auth @endauth --}}
         </v-app>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+            @csrf
+        </form>
     </div>
 </body>
 

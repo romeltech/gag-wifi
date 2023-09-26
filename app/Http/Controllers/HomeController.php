@@ -24,12 +24,13 @@ class HomeController extends Controller
      */
     public function home()
     {
-        $role = Auth::user()->role;
-        if($role == 'admin' || $role == 'editor'){
-            return redirect('admin');
-        }elseif ($role === 'normal' ) {
-            return redirect('dashboard');
-        }
+        return redirect('/admin/registered-users');
+        // $role = Auth::user()->role;
+        // if($role == 'admin' || $role == 'editor'){
+        //     return redirect('admin');
+        // }elseif ($role === 'normal' ) {
+        //     return redirect('dashboard');
+        // }
     }
 
     public function admin()
