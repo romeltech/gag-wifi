@@ -68,7 +68,7 @@ class UserController extends Controller
 
     public function getRegisteredUsers()
     {
-        $data = User::where('role', 'guest')->paginate(10);
+        $data = User::where('role', 'guest')->orderBy('id', 'desc')->paginate(10);
         return response()->json($data, 200);
     }
 
