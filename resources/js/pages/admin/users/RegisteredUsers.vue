@@ -12,6 +12,7 @@
                 <th class="text-left text-capitalize">Last Name</th>
                 <th class="text-left text-capitalize">Email</th>
                 <th class="text-left text-capitalize">Mobile Number</th>
+                <th class="text-left text-capitalize">Date</th>
               </tr>
             </thead>
             <tbody>
@@ -20,6 +21,7 @@
                 <td>{{ item.last_name }}</td>
                 <td>{{ item.email }}</td>
                 <td>{{ item.phone_no }}</td>
+                <td>{{ item.created_at }}</td>
               </tr>
             </tbody>
           </v-table>
