@@ -3,29 +3,29 @@
     "file": "assets/GuestLayout-4cf54ad2.css",
     "src": "GuestLayout.css"
   },
-  "_GuestLayout-5689ed08.js": {
+  "_GuestLayout-619d6a2c.js": {
     "css": [
       "assets/GuestLayout-4cf54ad2.css"
     ],
-    "file": "assets/GuestLayout-5689ed08.js",
+    "file": "assets/GuestLayout-619d6a2c.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_PageHeader-3ccb14fb.js": {
-    "file": "assets/PageHeader-3ccb14fb.js",
+  "_PageHeader-cd8f05dc.js": {
+    "file": "assets/PageHeader-cd8f05dc.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_index.esm-9322b7f0.js": {
-    "file": "assets/index.esm-9322b7f0.js",
+  "_index.esm-51e0df55.js": {
+    "file": "assets/index.esm-51e0df55.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_pageHeader-2aeeaf29.js": {
-    "file": "assets/pageHeader-2aeeaf29.js",
+  "_pageHeader-ed993d6f.js": {
+    "file": "assets/pageHeader-ed993d6f.js",
     "imports": [
       "resources/js/app.js"
     ]
@@ -49,80 +49,80 @@
       "resources/js/pages/admin/users/EditUser.vue",
       "resources/js/pages/admin/Logs.vue"
     ],
-    "file": "assets/app-61cd86c4.js",
+    "file": "assets/app-ad5c53d7.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/auth/Login.vue": {
-    "file": "assets/Login-ab1b107b.js",
+    "file": "assets/Login-862b63ba.js",
     "imports": [
       "resources/js/app.js",
-      "_GuestLayout-5689ed08.js"
+      "_GuestLayout-619d6a2c.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/auth/Login.vue"
   },
   "resources/js/pages/admin/Dashboard.vue": {
-    "file": "assets/Dashboard-cc710cc8.js",
+    "file": "assets/Dashboard-d544e0d4.js",
     "imports": [
       "resources/js/app.js",
-      "_PageHeader-3ccb14fb.js"
+      "_PageHeader-cd8f05dc.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/pages/admin/Dashboard.vue"
   },
   "resources/js/pages/admin/Logs.vue": {
-    "file": "assets/Logs-bc6751da.js",
+    "file": "assets/Logs-e774d774.js",
     "imports": [
       "resources/js/app.js",
-      "_PageHeader-3ccb14fb.js"
+      "_PageHeader-cd8f05dc.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/pages/admin/Logs.vue"
   },
   "resources/js/pages/admin/users/EditUser.vue": {
-    "file": "assets/EditUser-65c2840c.js",
+    "file": "assets/EditUser-4481e820.js",
     "imports": [
       "resources/js/app.js",
-      "_pageHeader-2aeeaf29.js",
-      "_index.esm-9322b7f0.js"
+      "_pageHeader-ed993d6f.js",
+      "_index.esm-51e0df55.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/pages/admin/users/EditUser.vue"
   },
   "resources/js/pages/admin/users/RegisteredUsers.vue": {
-    "file": "assets/RegisteredUsers-fb87c7d0.js",
+    "file": "assets/RegisteredUsers-9a16f9e4.js",
     "imports": [
       "resources/js/app.js",
-      "_PageHeader-3ccb14fb.js"
+      "_PageHeader-cd8f05dc.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/pages/admin/users/RegisteredUsers.vue"
   },
   "resources/js/pages/admin/users/Users.vue": {
-    "file": "assets/Users-c2a249c8.js",
+    "file": "assets/Users-96cc4c79.js",
     "imports": [
       "resources/js/app.js",
-      "_pageHeader-2aeeaf29.js"
+      "_pageHeader-ed993d6f.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/pages/admin/users/Users.vue"
   },
   "resources/js/pages/public/grandiose/Registration.vue": {
-    "file": "assets/Registration-080aab54.js",
+    "file": "assets/Registration-166aac8e.js",
     "imports": [
       "resources/js/app.js",
-      "_index.esm-9322b7f0.js",
-      "_GuestLayout-5689ed08.js"
+      "_index.esm-51e0df55.js",
+      "_GuestLayout-619d6a2c.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/pages/public/grandiose/Registration.vue"
   },
   "resources/js/pages/public/grandiose/ThankYou.vue": {
-    "file": "assets/ThankYou-9670e197.js",
+    "file": "assets/ThankYou-4b9cdc4a.js",
     "imports": [
       "resources/js/app.js",
-      "_GuestLayout-5689ed08.js"
+      "_GuestLayout-619d6a2c.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/pages/public/grandiose/ThankYou.vue"

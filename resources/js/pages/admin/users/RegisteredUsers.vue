@@ -12,7 +12,7 @@
                 <th class="text-left text-capitalize">Last Name</th>
                 <th class="text-left text-capitalize">Email</th>
                 <th class="text-left text-capitalize">Mobile Number</th>
-                <th class="text-left text-capitalize">Date</th>
+                <th class="text-left text-capitalize">{{ "Date (DD/MM/YYY)" }}</th>
               </tr>
             </thead>
             <tbody>
@@ -21,7 +21,7 @@
                 <td>{{ item.last_name }}</td>
                 <td>{{ item.email }}</td>
                 <td>{{ item.phone_no }}</td>
-                <td>{{ item.created_at }}</td>
+                <td>{{ useFormatDate(item.created_at) }}</td>
               </tr>
             </tbody>
           </v-table>
@@ -50,6 +50,7 @@
 </template>
 
 <script setup>
+import { useFormatDate } from "@/composables/formatDate.js";
 import { ref, watch } from "vue";
 import PageHeader from "@/components/PageHeader.vue";
 import { useRouter, useRoute } from "vue-router";
