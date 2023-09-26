@@ -47,6 +47,22 @@ export const routes = [
         },
     },
     {
+        path: "/admin/registered-users",
+        component: () => import("../pages/admin/users/RegisteredUsers.vue"),
+        name: "RegisteredUsers",
+        meta: {
+            title: "Users",
+        },
+    },
+    {
+        path: "/admin/registered-users/page/:page",
+        component: () => import("../pages/admin/users/RegisteredUsers.vue"),
+        name: "PaginatedRegisteredUsers",
+        meta: {
+            title: "Users",
+        },
+    },
+    {
         path: "/admin/users",
         component: () => import("../pages/admin/users/Users.vue"),
         name: "Users",
@@ -70,34 +86,34 @@ export const routes = [
             title: "Logs",
         },
     },
-    {
-        path: "/admin/departments",
-        component: () => import("../pages/admin/Departments.vue"),
-        name: "Departments",
-        meta: {
-            title: "Departments",
-        },
-    },
-    {
-        path: "/admin/companies",
-        component: () => import("../pages/admin/Companies.vue"),
-        name: "Companies",
-        meta: {
-            title: "Companies",
-        },
-    },
+    // {
+    //     path: "/admin/departments",
+    //     component: () => import("../pages/admin/Departments.vue"),
+    //     name: "Departments",
+    //     meta: {
+    //         title: "Departments",
+    //     },
+    // },
+    // {
+    //     path: "/admin/companies",
+    //     component: () => import("../pages/admin/Companies.vue"),
+    //     name: "Companies",
+    //     meta: {
+    //         title: "Companies",
+    //     },
+    // },
 
     /**
      * Normal user routes
      */
-    {
-        path: "/u",
-        component: () => import("../pages/admin/Dashboard.vue"),
-        name: "UserDashboard",
-        meta: {
-            title: "Dashboard",
-        },
-    },
+    // {
+    //     path: "/u",
+    //     component: () => import("../pages/admin/Dashboard.vue"),
+    //     name: "UserDashboard",
+    //     meta: {
+    //         title: "Dashboard",
+    //     },
+    // },
     // {
     //     path: "/admin/users",
     //     component: () => import("../admin/Users/Users.vue"),

@@ -66,9 +66,15 @@ class UserController extends Controller
         return response()->json($user, 200);
     }
 
+    public function getRegisteredUsers()
+    {
+        $data = User::where('role', 'guest')->paginate(10);
+        return response()->json($data, 200);
+    }
+
     public function getUsers()
     {
-        $users = User::all();
+        $users = User::where('role', 'admin')->get();
         return response()->json($users, 200);
     }
 

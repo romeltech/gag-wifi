@@ -30,7 +30,7 @@ Route::get('/home', [HomeController::class, 'home'])->name('home');
  * Admin routes
  */
 Route::middleware('auth')->prefix('admin')->group(function () {
-    Route::get('/', [HomeController::class, 'admin'])->name('admin');
+    Route::get('/',  [HomeController::class, 'home'])->name('admin');
     Route::get('/{slug}', [HomeController::class, 'admin'])->name('admin.slug');
 
     // users
@@ -38,6 +38,11 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     // users axios
     Route::get('/user/all', [UserController::class, 'getUsers'])->name('admin.get.all.users');
     Route::get('/user/single/{id}', [UserController::class, 'getSingleUser'])->name('admin.get.single.user');
+
+    // registered users
+    Route::get('/registered-users', [HomeController::class, 'admin'])->name('registered.users');
+    Route::get('/registered-users/page/{page}', [HomeController::class, 'admin'])->name('paginated.registered.users');
+    Route::get('/user/registered', [UserController::class, 'getRegisteredUsers'])->name('admin.get.registered.users');
 });
 
 /**
